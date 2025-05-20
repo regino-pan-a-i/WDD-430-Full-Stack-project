@@ -1,2 +1,22 @@
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <div class="row">
+            <div class="col-xs-6">
+                <h2>All Recipes</h2>
+            </div>
+            <div class="col-xs-6 text-right">
+                <button class="btn btn-success">New Recipe</button>
+            </div>
+        </div>
+    </div>
+    <div class="panel-body">
+        <div class="row">
+            <div class="col-xs-12">
+                <app-recipe-item *ngFor="let recipe of recipes" [recipe]="recipe"></app-recipe-item>
+            </div>
+        </div>
+    </div>
+</div>
+
 <app-recipe-item></app-recipe-item>
 
